@@ -70,9 +70,14 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // For API / HTTPS service request interface
-    implementation(libs.retrofit)
+    //implementation(libs.retrofit)
     // DI for Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
-
+    //
+    implementation(libs.retrofit.v300)
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava3:3.0.0")
+    implementation("io.reactivex.rxjava3:rxjava:3.1.5")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
 }

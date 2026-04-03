@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">SpatsApplication</string>
+    <string name="app_name">Spats Application</string>
+    <string name="SPOTIFY_CLIENT_ID">Place Client ID Here</string>
+    <string name="SPOTIFY_CLIENT_SECRET">Place Client Secret here</string>
+    <string name="LAST_FM_KEY">Place Key here</string>
+    <string name="REDIRECT_URI">com.example.legatoapp://callback</string>
+    <string name="SPOTIFY_SCOPES">user-read-playback-state user-read-currently-playing</string>
+    <string name="BASE_URL">https://accounts.spotify.com/</string>
 </resources>
