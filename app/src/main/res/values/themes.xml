@@ -2,4 +2,10 @@
 <resources>
 
     <style name="Theme.SpatsApplication" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Splash screen setup-->
+    <style name="Theme.SpatsApplication.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splats_splash</item>
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="postSplashScreenTheme">@style/Theme.SpatsApplication</item>
+    </style>
 </resources>

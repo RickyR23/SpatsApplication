@@ -89,4 +89,6 @@ dependencies {
     implementation(libs.adapter.rxjava3)
     implementation(libs.rxjava3)
     implementation(libs.rxandroid)
+
+    implementation("androidx.core:core-splashscreen:1.2.0")
 }

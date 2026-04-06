@@ -1,36 +1,25 @@
 package com.example.spatsapplication.models.response
 
+import com.google.gson.annotations.SerializedName
+
 data class SpotifyUserProfileResponse(
-    val display_name: String? = null,
-    val email: String? = null,
-    val external_urls: Map<String, String>? = null,
-    val images: List<Image>? = null
+    @SerializedName("display_name")
+    val displayName: String?,
+
+    @SerializedName("email")
+    val email: String?,
+
+    @SerializedName("external_urls")
+    val externalUrls: Map<String, String>?,
+
+    @SerializedName("images")
+    val images: List<Image>?
 ) {
-    fun getDisplayName(): String? {
-        return display_name
-    }
-
-    fun getEmail(): String? {
-        return email
-    }
-
-    fun getExternalUrls(): Map<String, String>? {
-        return external_urls
-    }
-
-    fun getSpotify(): String? {
-        return external_urls?.get("spotify")
-    }
-
-    fun getImages(): List<Image>? {
-        return images
-    }
+    val spotify: String?
+        get() = externalUrls?.get("spotify")
 
     data class Image(
-        val url: String? = null
-    ) {
-        fun getUrl(): String? {
-            return url
-        }
-    }
+        @SerializedName("url")
+        val url: String?
+    )
 }
